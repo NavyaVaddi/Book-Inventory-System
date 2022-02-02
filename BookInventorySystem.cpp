@@ -41,16 +41,16 @@ void book::feeddata()	{
 
 void book::editdata()	{
 	
-	cout<<"\nEnter Author Name: ";     
- cin.getline(author,20);
+	cout<<"\nEnter Author Name: "; 
+	cin.getline(author,20);
 	cout<<"Enter Title Name: ";       
- cin.getline(title,20);
+	cin.getline(title,20);
 	cout<<"Enter Publisher Name: ";   
- cin.getline(publisher,20);
+	cin.getline(publisher,20);
 	cout<<"Enter Price: ";            
- cin>>*price;
+	cin>>*price;
 	cout<<"Enter Stock Position: ";   
- cin>>*stock;   
+	cin>>*stock;   
 	}
 
 void book::showdata()	{
@@ -101,9 +101,9 @@ int main()	{
 				
 			case 2: cin.ignore();
 				cout<<"\nEnter Title Of Book: "; 
-    cin.getline(titlebuy,20);
+				cin.getline(titlebuy,20);
 				cout<<"Enter Author Of Book: "; 
-     cin.getline(authorbuy,20);
+				cin.getline(authorbuy,20);
 				for(t=0;t<i;t++)	{
 					if(B[t]->search(titlebuy,authorbuy))	{
 						B[t]->buybook();
@@ -116,9 +116,9 @@ int main()	{
 				break;
 			case 3: cin.ignore();
 				cout<<"\nEnter Title Of Book: "; 
-    cin.getline(titlebuy,20);
+				cin.getline(titlebuy,20);
 				cout<<"Enter Author Of Book: ";  
-    cin.getline(authorbuy,20);
+				cin.getline(authorbuy,20);
 				
 				for(t=0;t<i;t++)	{
 					if(B[t]->search(titlebuy,authorbuy))	{
@@ -133,9 +133,9 @@ int main()	{
 			
 			case 4: cin.ignore();
 				cout<<"\nEnter Title Of Book: "; 
-    cin.getline(titlebuy,20);
+				cin.getline(titlebuy,20);
 				cout<<"Enter Author Of Book: ";  
-    cin.getline(authorbuy,20);
+				cin.getline(authorbuy,20);
 				
 				for(t=0;t<i;t++)	{
 					if(B[t]->search(titlebuy,authorbuy))	{
